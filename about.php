@@ -22,7 +22,7 @@
    <link rel="stylesheet" href="css/style.css">
    <style>
       .head {
-         background: url(./images/head_img.png) no-repeat;
+         background: url(./images/head-img.png) no-repeat;
          background-size: cover;
          background-position: center;
       }
@@ -40,13 +40,13 @@
    <div class="flex">
 
       <div class="image">
-         <img style="border-radius: 4px;" height="350px" src="images/info-img.jpg" alt="">
+         <img style="border-radius: 4px;" height="350px" src="images/info_img.jpg" alt="">
       </div>
 
       <div class="content">
-         <h3>Tại sao lại có ToCoToCo.</h3>
-         <p>Hành trình đầy đam mê và tâm huyết này sẽ tiếp tục nhân rộng để lan tỏa những ly trà thuần khiết nông sản Việt đến mọi miền trên Việt Nam và thế giới.</p>
-         <p>Sảng khoái mỗi ngày, tươi trẻ mỗi ngày.</p>
+         <h3>Tại sao lại có PhoneStore.</h3>
+         <p>Chúng tôi đem lại những sản phẩm mới, chất lượng nhất để phục vụ khách hàng, đặt chữ tín lên đầu.</p>
+         <p>Cập nhật tin tức mỗi giây, mỗi phút, mỗi giờ, mỗi ngày.</p>
          <a href="contact.php" class="btn">Liên hệ</a>
       </div>
 
@@ -57,7 +57,7 @@
 
 <section class="authors">
 
-   <h1 class="title">Thành viên của ToCoToCo</h1>
+   <h1 class="title">Thành viên của PhoneStore</h1>
 
    <div class="box-container">
 
@@ -67,16 +67,7 @@
             <a href="#" class="fab fa-facebook-f" target="_blank"></a>
             <a href="#" class="fab fa-instagram"></a>
          </div>
-         <h3>Huỳnh Như </h3>
-      </div>
-
-      <div class="box">
-         <img src="images/xuanha.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f" target="_blank"></a>
-            <a href="#" class="fab fa-instagram"></a>
-         </div>
-         <h3>Xuân Hà </h3>
+         <h3>Phạm Quốc Dương </h3>
       </div>
    </div>
 
