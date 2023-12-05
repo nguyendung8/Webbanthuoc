@@ -62,12 +62,20 @@
    <div class="box-container">
 
       <div class="box">
-         <img src="images/huynhnhu.jpg" alt="">
+         <img src="images/pqd.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f" target="_blank"></a>
             <a href="#" class="fab fa-instagram"></a>
          </div>
          <h3>Phạm Quốc Dương </h3>
+      </div>
+      <div class="box">
+         <img src="images/nch.jpg" alt="">
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f" target="_blank"></a>
+            <a href="#" class="fab fa-instagram"></a>
+         </div>
+         <h3>Nguyễn Chí Học </h3>
       </div>
    </div>
 

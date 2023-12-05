@@ -70,7 +70,7 @@
    <h1 class="statis_title">Thống kê sản phẩm bán chạy</h1>
    <?php if (count($best_seller) > 0): ?>
       <div class="table-responsive card mt-2">
-          <table style="width: 69% !important; margin: auto;" class="table table-bordered statistical_table">
+          <table style="width: 80% !important; margin: auto;" class="table table-bordered statistical_table">
               <tr>
                   <th>ID</th>
                   <th>Tên sản phẩm</th>
@@ -103,7 +103,7 @@
    <h1 class="statis_title">Thống kê sản phẩm đã hết trong kho</h1>
     <?php if (count($out_of_stock) > 0): ?>
       <div class="table-responsive card mt-2">
-          <table style="width: 69% !important; margin: auto;" class="table table-bordered statistical_table">
+          <table style="width: 80% !important; margin: auto;" class="table table-bordered statistical_table">
               <tr>
                   <th>ID</th>
                   <th>Tên sản phẩm</th>
