@@ -36,7 +36,6 @@
          <p>Tên người dùng : <span><?php echo $_SESSION['admin_name']; ?></span></p>
          <p>Email : <span><?php echo $_SESSION['admin_email']; ?></span></p>
          <a href="logout.php" class="delete-btn">Đăng xuất</a>
-         <div><a href="login.php">Đăng nhập</a> | <a href="register.php">Đăng ký</a></div>
       </div>
 
    </div>

@@ -19,7 +19,9 @@
       $newprice= $price*(100-$discount)/100;
       $quantity = $_POST['quantity'];
       $initial_quantity = $_POST['quantity'];
-      $describe = $_POST['describe'];
+      $trademark = $_POST['trademark'];
+      $uses = $_POST['uses'];
+      $subject_use = $_POST['subject_use'];
       $image = $_FILES['image']['name'];
       $image_size = $_FILES['image']['size'];
       $image_tmp_name = $_FILES['image']['tmp_name'];
@@ -30,11 +32,11 @@
       if(mysqli_num_rows($select_product_name) > 0){
          $message[] = 'Sản phẩm đã tồn tại.';
       }else{//chưa thì thêm mới
-         $add_product_query = mysqli_query($conn, "INSERT INTO `products`(name, cate_id, price, discount, newprice,quantity,initial_quantity, describes, image) VALUES('$name', '$cate_id', '$price', '$discount', '$newprice', '$quantity', '$initial_quantity', '$describe', '$image')") or die('query failed');
+         $add_product_query = mysqli_query($conn, "INSERT INTO `products`(name, cate_id, price, discount, newprice,quantity,initial_quantity, trademark, uses, subject_use, image) VALUES('$name', '$cate_id', '$price', '$discount', '$newprice', '$quantity', '$initial_quantity', '$trademark', '$uses', '$subject_use', '$image')") or die('query failed');
 
          if($add_product_query){
             if($image_size > 2000000){//kiểm tra kích thước ảnh
-               $message[] = 'Kích tước ảnh quá lớn, hãy cập nhật lại ảnh!';
+               $message[] = 'Kích thước ảnh quá lớn, hãy cập nhật lại ảnh!';
             }else{
                move_uploaded_file($image_tmp_name, $image_folder);//lưu file ảnh xuống
                $message[] = 'Thêm sản phẩm thành công!';
@@ -140,8 +142,10 @@
       <input type="number" min="0" name="price" class="box" placeholder="Giá sản phẩm" required>
       <input type="number" min="0" name="discount" class="box" placeholder="% giảm giá" required>
       <input type="number" min="1" name="quantity" class="box" placeholder="Số lượng" required>
-      <input type="text" name="describe" class="box" placeholder="Mô tả" required>
-      <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
+      <input type="text" name="trademark" class="box" placeholder="Thương hiệu" required>
+      <input type="text" name="subject_use" class="box" placeholder="Đối tượng sử dụng" required>
+      <input type="text" name="uses" class="box" placeholder="Công dụng" required>
+      <input type="file" name="image" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
       <input type="submit" value="Thêm" name="add_product" class="btn">
    </form>
 
@@ -164,10 +168,7 @@
                       $result= mysqli_query($conn, "SELECT * FROM `categorys` WHERE id = $cate_id") or die('Query failed');
                       $cate_name = mysqli_fetch_assoc($result)
                    ?>
-                  <div class="sub-name">Danh mục: <?php echo $cate_name['name']; ?></div>
-                  <div class="sub-name">Mô tả: <?php echo $fetch_products['describes']; ?></div>
                   <div class="price"><span style="text-decoration-line: line-through"><?php echo number_format($fetch_products['price'],0,',','.'  ); ?></span> VND (Giảm giá: <?php echo $fetch_products['discount']; ?>%)</div>
-                  <div class="price"><?php echo number_format($fetch_products['newprice'],0,',','.' );; ?> VND (SL: <?php echo $fetch_products['quantity']; ?>)</div>
                   <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">Cập nhật</a>
                   <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('Xóa sản phẩm này?');">Xóa</a>
                </div>
