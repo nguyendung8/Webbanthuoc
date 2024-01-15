@@ -19,8 +19,8 @@
       <div class="box">
          <h3>Thông tin liên lạc</h3>
          <p> <i class="fas fa-phone"></i> +84123456789 </p>
-         <p> <i class="fas fa-envelope"></i> phonestore@gmail.com </p>
-         <p> <i class="fas fa-map-marker-alt"></i> Hà nội - Việt Nam </p>
+         <p> <i class="fas fa-envelope"></i> giathinhpharma@gmail.com </p>
+         <p> <i class="fas fa-map-marker-alt"></i> Quảng Nam - Việt Nam </p>
       </div>
 
       <div class="box">
@@ -31,6 +31,6 @@
 
    </div>
 
-   <p class="credit"> &copy; Copyright  @ <?php echo date('Y'); ?> by <span>PhoneStore</span> </p>
+   <p class="credit"> &copy; Copyright  @ <?php echo date('Y'); ?> by <span>Gia Thịnh Pharma</span> </p>
 
 </section>

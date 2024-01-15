@@ -22,7 +22,7 @@
    <link rel="stylesheet" href="css/style.css">
    <style>
       .head {
-         background: url(./images/head-img.png) no-repeat;
+         background: url(./images/head_img.webp) no-repeat;
          background-size: cover;
          background-position: center;
       }
@@ -44,9 +44,9 @@
       </div>
 
       <div class="content">
-         <h3>Tại sao lại có PhoneStore.</h3>
-         <p>Chúng tôi đem lại những sản phẩm mới, chất lượng nhất để phục vụ khách hàng, đặt chữ tín lên đầu.</p>
-         <p>Cập nhật tin tức mỗi giây, mỗi phút, mỗi giờ, mỗi ngày.</p>
+         <h3>Tại sao lại có Gia Thịnh Pharma.</h3>
+         <p>Chúng tôi đem lại những sản phẩm mới, chất lượng nhất để phục vụ khách hàng, đặt sức khỏe lên hàng đầu.</p>
+         <p>Hãy để chúng tôi mang đến nụ cười cho bạn.</p>
          <a href="contact.php" class="btn">Liên hệ</a>
       </div>
 
@@ -57,25 +57,17 @@
 
 <section class="authors">
 
-   <h1 class="title">Thành viên của PhoneStore</h1>
+   <h1 class="title">Thành viên của Gia Thịnh Pharma</h1>
 
    <div class="box-container">
 
       <div class="box">
-         <img src="images/pqd.jpg" alt="">
+         <img src="images/anhcanhan.png" alt="">
          <div class="share">
             <a href="#" class="fab fa-facebook-f" target="_blank"></a>
             <a href="#" class="fab fa-instagram"></a>
          </div>
-         <h3>Phạm Quốc Dương </h3>
-      </div>
-      <div class="box">
-         <img src="images/nch.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f" target="_blank"></a>
-            <a href="#" class="fab fa-instagram"></a>
-         </div>
-         <h3>Nguyễn Chí Học </h3>
+         <h3>Phát Gia Thịnh </h3>
       </div>
    </div>
 

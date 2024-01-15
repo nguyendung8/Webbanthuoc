@@ -109,7 +109,7 @@
       }
       .home-banner {
          min-height: 70vh;
-         background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(./images/home_head.png) no-repeat;
+         background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(./images/home-head.jpg) no-repeat;
          background-size: cover;
          background-position: center;
          display: flex;
@@ -141,25 +141,16 @@
 <div class="content">
       <div class="slideshow-container">
          <div class="slide fade">
-            <img src="./images/slider8.jpg" alt="slide 1">
+            <img src="./images/slide1.webp" alt="slide 1">
          </div>
          <div class="slide fade">
-            <img src="./images/slider2.png" alt="slide 2">
+            <img src="./images/slide1.webp" alt="slide 2">
          </div>
          <div class="slide fade">
-            <img src="./images/slider3.jpg" alt="slide 3">
+            <img src="./images/slide1.jpg" alt="slide 3">
          </div>
          <div class="slide fade">
-            <img src="./images/slider4.jpg" alt="slide 3">
-         </div>
-         <div class="slide fade">
-            <img src="./images/slider5.jpg" alt="slide 3">
-         </div>
-         <div class="slide fade">
-            <img src="./images/slider6.jpg" alt="slide 3">
-         </div>
-         <div class="slide fade">
-            <img src="./images/slider7.png" alt="slide 3">
+            <img src="./images/slide1.jpg" alt="slide 3">
          </div>
       </div>
    </div>
@@ -214,14 +205,13 @@
    <div class="flex">
 
       <div class="image">
-         <img height="307px;" style="border-radius: 4px;" src="images/home_footer.jpg" alt="">
+         <img height="307px;" style="border-radius: 4px;" src="images/home-footer.webp" alt="">
       </div>
 
       <div class="content">
-         <h3>Phone Store</h3>
+         <h3>Gia Thịnh Pharma</h3>
          <p> 
-            Bên cạnh niềm tự hào về những ly trà sữa ngon – sạch – tươi, chúng tôi luôn tự tin
-            mang đến khách hàng những trải nghiệm tốt nhất về dịch vụ và không gian.
+         Tận tâm chăm sóc, nhiệt tình lắng nghe, Chăm sóc tận tình, hết mình vì sức khỏe, Tinh thần vui vẻ – sức khỏe mỗi ngày, Sức khỏe hôm nay – Niềm tin ngày mai.
          </p>
       </div>
 

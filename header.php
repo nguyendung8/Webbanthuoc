@@ -35,8 +35,8 @@
    </div>
 
    <div class="header-2">
-      <div class="flex">
-         <a href="home.php" class="logo"><img width="150px" height="100px" src="./images/logo.png"></a>
+      <div style="padding: 0" class="flex">
+         <a href="home.php" class="logo"><img width="170px" height="130px" src="./images/logo_gt.png"></a>
 
          <nav class="navbar">
             <a href="home.php">Trang chủ</a>

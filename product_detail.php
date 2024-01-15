@@ -60,9 +60,10 @@
          padding: 15px;
       }
       .modal{
-         width: 500px;
+         width: 700px;
          margin: auto;
          border: 2px solid #eee;
+         padding: 0 20px;
          padding-bottom: 27px;
          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
          border-radius: 5px;
@@ -118,8 +119,16 @@
                     <?php echo ($productItem['quantity']) ?>
                 </p>
                 <p class="peoductdetail-desc">
-                    Mô tả: 
-                    <?php echo($productItem['describes'])  ?>
+                    Thương hiệu: 
+                    <?php echo($productItem['trademark'])  ?>
+                </p>
+                <p class="peoductdetail-desc">
+                    Đối tượng sử dụng: 
+                    <?php echo($productItem['subject_use'])  ?>
+                </p>
+                <p class="peoductdetail-desc">
+                    Công dụng: 
+                    <?php echo($productItem['uses'])  ?>
                 </p>
             </div>
             <input type="hidden" name="product_name" value="<?php echo $productItem['name']; ?>">
