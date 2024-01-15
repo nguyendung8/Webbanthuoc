@@ -40,7 +40,7 @@
    <div class="flex">
 
       <div class="image">
-         <img style="border-radius: 4px;" height="350px" src="images/info_img.jpg" alt="">
+         <img style="border-radius: 4px;" height="350px" src="images/info_img.webp" alt="">
       </div>
 
       <div class="content">

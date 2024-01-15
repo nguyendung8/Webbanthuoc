@@ -32,10 +32,10 @@
                $num=$fetch_quantity['quantity'];
             }
             mysqli_query($conn, "UPDATE `cart` SET quantity='$num' WHERE name = '$product_name' AND user_id = '$user_id'");
-            $message[] = 'Đã có trong giỏ hàng!';
+            $message[] = 'Sản phẩm đã có trong giỏ hàng và được thêm số lượng!';
          }else{
             mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, quantity, image) VALUES('$user_id', '$product_name', '$product_price', '$product_quantity', '$product_image')") or die('query failed');
-            $message[] = 'Đã được thêm trong giỏ hàng!';
+            $message[] = 'Sản phẩm đã được thêm vào giỏ hàng!';
          }
       }
 
@@ -94,7 +94,7 @@
    <div class="box-container">
       <?php
          if(isset($_POST['submit'])){
-            $search_item = $_POST['search'];
+            $search_item = trim($_POST['search']);
             $select_products = mysqli_query($conn, "SELECT * FROM `products` WHERE name LIKE '%{$search_item}%'") or die('query failed');
             if(mysqli_num_rows($select_products) > 0){
                while($fetch_products = mysqli_fetch_assoc($select_products)){
