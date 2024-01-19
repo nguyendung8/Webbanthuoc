@@ -11,9 +11,13 @@
    }
 
    if(isset($_GET['delete'])){//xóa người dùng từ onclick href='delete'
-      $delete_id = $_GET['delete'];
-      mysqli_query($conn, "DELETE FROM `users` WHERE id = '$delete_id'") or die('query failed');
-      header('location:admin_users.php');
+      try {
+         $delete_id = $_GET['delete'];
+         mysqli_query($conn, "DELETE FROM `users` WHERE id = '$delete_id'") or die('query failed');
+         header('location:admin_users.php');
+      } catch(Exception) {
+         $message[]="Không thể xóa người dùng!";
+      }
    }
 
 ?>
@@ -40,7 +44,7 @@
 
    <div class="box-container">
       <?php
-         $select_users = mysqli_query($conn, "SELECT * FROM `users`") or die('query failed');
+         $select_users = mysqli_query($conn, "SELECT * FROM `users` where user_type = 'user'") or die('query failed');
          while($fetch_users = mysqli_fetch_assoc($select_users)){
       ?>
       <div class="box">

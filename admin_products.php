@@ -65,9 +65,9 @@
       $update_discount = $_POST['update_discount'];
       $update_newprice = $update_price*(100-$update_discount)/100;
       $update_quantity = $_POST['update_quantity'];
-      $update_describe = $_POST['update_describe'];
+      $update_trademark = $_POST['update_trademark'];
 
-      mysqli_query($conn, "UPDATE `products` SET name = '$update_name', cate_id='$update_category', price = '$update_price', newprice='$update_newprice', discount='$update_discount', quantity='$update_quantity', describes='$update_describe' WHERE id = '$update_p_id'") or die('query failed');
+      mysqli_query($conn, "UPDATE `products` SET name = '$update_name', cate_id='$update_category', price = '$update_price', newprice='$update_newprice', discount='$update_discount', quantity='$update_quantity', trademark='$update_trademark' WHERE id = '$update_p_id'") or die('query failed');
 
       $update_image = $_FILES['update_image']['name'];
       $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
@@ -214,7 +214,7 @@
                   </select>
                   <input type="number" name="update_price" value="<?php echo $fetch_update['price']; ?>" min="0" class="box" required placeholder="Giá sản phẩm">
                   <input type="number" name="update_quantity" value="<?php echo $fetch_update['quantity']; ?>" min="0" class="box" required placeholder="Số lượng sản phẩm">
-                  <input type="text" name="update_describe" value="<?php echo $fetch_update['describes']; ?>" class="box" required placeholder="Mô tả">
+                  <input type="text" name="update_trademark" value="<?php echo $fetch_update['trademark']; ?>" class="box" required placeholder="Mô tả">
                   <input type="submit" value="update" name="update_product" class="btn">
                   <input type="reset" value="cancel" id="close-update" class="option-btn">
                </form>

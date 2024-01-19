@@ -74,7 +74,7 @@
               <tr>
                   <th>ID</th>
                   <th>Tên sản phẩm</th>
-                  <th>Mô tả</th>
+                  <th>Giá bán</th>
                   <th>Số lượng sản phẩm đã bán</th>
               </tr>
 				<?php foreach ($best_seller as $item): ?>
@@ -86,7 +86,7 @@
 							<label style="width: auto"><?php echo $item['name']; ?></label>
 						</td>
 						<td>
-							<label style="width: auto"><?php echo $item['describes']; ?></label>
+							<label style="width: auto"><?php echo number_format($item['newprice'],0,',','.' ); ?> VND</label>
 						</td>
 						<td>
 							<label style="width: auto"><?php echo $item['initial_quantity'] - $item['quantity']; ?></label>
@@ -107,7 +107,7 @@
               <tr>
                   <th>ID</th>
                   <th>Tên sản phẩm</th>
-                  <th>Mô tả</th>
+                  <th>Giá bán</th>
                   <th>Số lượng còn</th>
               </tr>
 				<?php foreach ($out_of_stock as $item): ?>
@@ -119,7 +119,7 @@
 							<label style="width: auto"><?php echo $item['name']; ?></label>
 						</td>
 						<td>
-							<label style="width: auto"><?php echo $item['describes']; ?></label>
+							<label style="width: auto"><?php echo number_format($item['newprice'],0,',','.' ); ?> VND</label>
 						</td>
 						<td>
 							<label style="width: auto"><?php echo $item['quantity']; ?></label>

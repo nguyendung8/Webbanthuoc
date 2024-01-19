@@ -96,7 +96,7 @@
          <div class="name"><?php echo $fetch_categorys['name']; ?></div>
          <div class="sub-name">Mô tả: <?php echo $fetch_categorys['describes']; ?></div>
          <a href="admin_category.php?update=<?php echo $fetch_categorys['id']; ?>" class="option-btn">Cập nhật</a>
-         <a href="admin_category.php?delete=<?php echo $fetch_categorys['id']; ?>" class="delete-btn" onclick="return confirm('Xóa thể loại sản phẩm này?');">Xóa</a>
+         <a href="admin_category.php?delete=<?php echo $fetch_categorys['id']; ?>" class="delete-btn" onclick="return confirm('Xóa danh mục này?');">Xóa</a>
       </div>
       <?php
          }
